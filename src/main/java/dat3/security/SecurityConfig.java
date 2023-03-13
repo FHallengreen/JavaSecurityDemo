@@ -91,7 +91,7 @@ public class SecurityConfig {
             .requestMatchers("/api/cookie/**").permitAll()
 
             //Allow anonymous access to this endpoint
-            //.requestMatchers(HttpMethod.GET,"/api/demo/anonymous").permitAll()
+            .requestMatchers(HttpMethod.GET,"/api/demo/anonymous").permitAll()
 
             //necessary to allow for "nice" JSON Errors
             .requestMatchers("/error").permitAll()
